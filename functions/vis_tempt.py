@@ -26,7 +26,7 @@ def extract(source):
 
 def store(extracted):
 	now = datetime.now().strftime("%y-%m-%d-%H-%M-%S")
-	with open("data_vis_tempt.txt","a") as file:
+	with open("../data_vis_tempt.txt", "a") as file:
 		line = f"{now},{extracted}\n"
 		file.write(line)
 

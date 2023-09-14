@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 
 
-df = pd.read_csv("data_vis_tempt.txt")
+df = pd.read_csv("../data_vis_tempt.txt")
 print(df.columns)
 
 figure = px.line(x=df['date'], y=df['temperature'],
